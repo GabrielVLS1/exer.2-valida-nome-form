@@ -40,7 +40,7 @@ form.addEventListener('submit', function(e) {
 
 nomeBeneficiario.addEventListener('change', function(e) { // OU 'keyup', para respostas imediatas do teclado
     console.log(e.target.value);
-    formEValido = validaNome(e.target.value);
+    formEValido = validaNome(e.target.value); //mesma coisa com o 'this' (nesse caso)
 
     if (!formEValido) {
         nomeBeneficiario.classList.add('error');
